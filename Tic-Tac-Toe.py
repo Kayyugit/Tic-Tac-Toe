@@ -72,7 +72,7 @@ def checkTie(board):
 def checkWin():
     global gameRunning
     if checkDiag(board) or checkHorizontal(board) or checkRow(board):
-        printBoard(board)  # Print the final board before announcing the winner
+        printBoard(board)
         print(f"The winner is {winner}!")
         gameRunning = False
 
